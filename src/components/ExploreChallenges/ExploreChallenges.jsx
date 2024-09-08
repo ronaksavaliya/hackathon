@@ -4,6 +4,8 @@ import "./exploreChallenges.css";
 import { Grid2, TextField } from "@mui/material";
 import ChallengeCard from "../ChallengeCard/ChallengeCard";
 import { FilterMenu } from "../FilterMenu/FilterMenu";
+import closeIcon from "../../assets/svg/closeIcon.svg";
+import Image from "next/image";
 
 const ExploreChallenges = () => {
   const [allChallenges, setAllChallenges] = useState([]);
@@ -14,7 +16,7 @@ const ExploreChallenges = () => {
   const level = ["EASY", "MEDIUM", "HARD"];
 
   const onFilterChange = (value) => {
-    setSelectedFilters(value);
+    setSelectedFilters([...value]);
     const statusFilter = value.filter((filterName) => {
       return status.includes(filterName);
     });
@@ -69,6 +71,16 @@ const ExploreChallenges = () => {
     setChallenges(JSON.parse(localStorage.getItem("challenges")));
   }, []);
 
+  const handleRemoveFilter = (event) => {
+    let temp = [...selectedFilters];
+
+    temp = temp.filter((filterName) => {
+      return filterName !== event.target.id;
+    });
+
+    onFilterChange(temp);
+  };
+
   return (
     <>
       <div style={{ height: "324px", backgroundColor: "rgba(0, 42, 59, 1)" }}>
@@ -78,7 +90,7 @@ const ExploreChallenges = () => {
             display: "flex",
             justifyContent: "center",
             gap: "20px",
-            marginTop: "70px",
+            marginTop: "50px",
           }}
         >
           <TextField
@@ -108,12 +120,39 @@ const ExploreChallenges = () => {
             selectedFilters={selectedFilters}
           />
         </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "20px",
+            marginTop: "30px",
+            paddingLeft: "200px",
+          }}
+        >
+          {selectedFilters.map((filter, index) => {
+            return (
+              <div key={index} className="filterBox">
+                {filter.charAt(0).toUpperCase() + filter.slice(1).toLowerCase()}
+                <Image
+                  src={closeIcon}
+                  alt=""
+                  style={{ cursor: "pointer" }}
+                  id={filter}
+                  onClick={handleRemoveFilter}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
       <Grid2
         container
         spacing={3}
         justifyContent="center"
-        sx={{ backgroundColor: "rgba(0, 49, 69, 1)" }}
+        sx={{
+          backgroundColor: "rgba(0, 49, 69, 1)",
+          paddingTop: "50px",
+          paddingBottom: "50px",
+        }}
       >
         {challenges?.map((challenge, index) => (
           <Grid2 item key={index}>

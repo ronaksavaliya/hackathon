@@ -3,6 +3,16 @@
     font-weight: 600;
     line-height: 40px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 60px;
     color: #ffffff;
+}
+
+.filterBox {
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(248, 249, 253, 0.49);
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
 }

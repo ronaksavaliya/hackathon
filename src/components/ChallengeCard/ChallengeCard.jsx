@@ -52,7 +52,7 @@ const ChallengeCard = ({ challenge }) => {
 
   return (
     <Card className="card">
-      <CardMedia component="img" alt={name} height="150" image={image} />
+      <CardMedia component="img" height="150" image={image} />
 
       <div className="status-box">
         <Grid2
