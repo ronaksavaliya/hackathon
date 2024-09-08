@@ -1,0 +1,6 @@
+.navBar {
+    height: 64px;
+    padding-left: 89px;
+    display: flex;
+    align-items: center;
+}

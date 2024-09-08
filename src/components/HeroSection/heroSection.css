@@ -1,0 +1,128 @@
+.heroSection {
+    background-color: #003145;
+    padding-left: 143px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: flex;
+}
+
+.verticalLine {
+    background: #FFCE5C;
+    width: 9.71px;
+    height: 115.91px;
+}
+
+.heroSectionHeading {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #ffffff;
+}
+
+.heroSectionLeft {
+    display: flex;
+    gap: 50px;
+}
+
+.heroSectionDesc {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.ctaBtn {
+    width: 198px;
+    height: 47px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    color: #003145;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.ctaBtn:hover {
+    background-color: #e8e4e4;
+}
+
+.heroSectionImg {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+}
+
+.dataContainer {
+    height: 200px;
+    background-color: #002A3B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aiIconBox,
+.dataScientistIconBox,
+.challengesHostedIconBox {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #F2F4FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submissionCount,
+.dataScientistCount,
+.challengesHostedCount {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.aiModelText,
+.dataScientistText,
+.challengesHostedText {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.aiModelSubmissionBox,
+.dataScientistsBox,
+.challengesHostedBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.verticalLine1 {
+    width: 1px;
+    height: 38px;
+    background-color: #C4C4C4;
+    margin-left: 70px;
+    margin-right: 140px;
+}
+
+.verticalLine2 {
+    width: 1px;
+    height: 38px;
+    background-color: #C4C4C4;
+    margin-left: 150px;
+    margin-right: 120px;
+}

@@ -1,0 +1,121 @@
+.challengeDetailsTopBar {
+    height: 107px;
+    padding-left: 89px;
+    background-color: #F8F9FD;
+    display: flex;
+    align-items: center;
+}
+
+.challengeDetailsText {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+}
+
+.createChallengeInfo {
+    padding-left: 89px;
+    padding-top: 50px;
+}
+
+.challengeNameText,
+.startDateText,
+.endDateText,
+.descriptionText,
+.imageText,
+.levelTypeText {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    margin-bottom: 15px;
+}
+
+.startDateText,
+.endDateText,
+.levelTypeText {
+    margin-bottom: 5px;
+    margin-top: 35px;
+}
+
+.descriptionText,
+.imageText {
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+.textArea {
+    width: 817px;
+    height: 252px;
+    border: 1px solid #B7B7B7;
+    resize: none;
+    padding: 10px;
+}
+
+.textArea:hover {
+    outline: none !important;
+    border: 1px solid black;
+}
+
+.textArea:focus {
+    outline: none !important;
+    border: 2px solid #1A77D2;
+}
+
+.imageUploadBox {
+    width: 236px;
+    height: 47px;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.uploadText {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+    color: #666666;
+}
+
+.imageName {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: green;
+    margin-top: 5px;
+}
+
+.createChallengeBtn {
+    border: none;
+    width: 214px;
+    height: 46px;
+    top: 1152px;
+    background-color: #44924C;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.createChallengeBtn:hover {
+    background-color: #387e3f;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    font-family: "Inter", sans-serif;
+}
